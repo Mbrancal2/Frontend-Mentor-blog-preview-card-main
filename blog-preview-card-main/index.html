@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    @font-face {
+      font-family: 'Figtree-Italic';
+      src: url(./assets/fonts/Figtree-Italic-VariableFont_wght.ttf);
+    }
+    @font-face {
+      font-family: 'Figtree';
+      src: url(./assets/fonts/Figtree-VariableFont_wght.ttf);
+    }
+
+    :root{
+      --clr-Yellow: hsl(47, 88%, 63%);
+      --clr-White: hsl(0, 0%, 100%);
+      --clr-Grey: hsl(0, 0%, 50%);
+      --clr-Black: hsl(0, 0%, 7%);
+      --fs-normal: 16px;
+      --fw-bold: 500;
+      --fw-bolder: 800;
+      --ss-desktop: 1440px;
+      --ss-mobile: 375px;
+      --font-Figtree: 'Figtree';
+      --font-Figtree-Italic: 'Figtree-Italic';
+    }
+    *{
+      box-sizing: border-box;
+    }
+    body{
+      background-color: var(--clr-Yellow);
+      height: 100vh;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      font-family: var(--font-Figtree);
+    }
+    .card{
+      background-color: var(--clr-White);
+      min-width: 325px;
+      min-height: 505px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 20px;
+      border-radius: 15px;
+      border: solid;
+      box-shadow: 7px 7px;
+      margin-bottom: 10px;
+    }
+    .card-img img{
+      border-radius: 15px;
+      margin-bottom: 10px;
+    }
+    p{
+      width: 335px;
+      font-size: 16px;
+    }
+    .Learning{
+      background-color: var(--clr-Yellow);
+      height: 25px;
+      /* width: 78px; */
+      width: 65px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      box-sizing: content-box;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+      border-radius: 5px;
+      font-weight: var(--fw-bolder);
+    }
+    .user-info{
+      display: flex;
+      align-items: center;
+      font-weight: var(--fw-bolder);
+    }
+    .user-info img{
+      width: 30px;
+      margin-right: 10px;
+    }
+    h2{
+      margin-bottom: 0px;
+      margin-top: 10px;
+      font-weight: var(--fw-bolder);
+    }
+    p{
+      line-height: 1.3em;
+      color: var(--clr-Grey);
+      margin-bottom: 20px;
+    }
+    span{
+      font-size: small;
+      font-weight: var(--fw-bold);
+    }
+
+    @media only screen and (max-width: 375px){
+      body{
+        font-size: 14px;
+        background-color: brown;
+      }
+      .card{
+        width: 200px;
+        min-height: 200px;
+      }
+      .card-img img{
+        border-radius: 15px;
+        margin-bottom: 10px;
+        width: 280px;
+      }
+      .Learning{
+        height: 18px;
+        font-size: 13px;
+        width: 52px;
+      }
+      p{
+        width: 270px;
+        font-size: 13px;
+      }
+      h2 {
+        font-size: 19px;
+      }
+      span{
+        font-size: 12px;
+      }
+
+    }
+
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="card-img">
+      <img src="./assets/images/illustration-article.svg">
+    </div>
+    <div class="Learning"> Learning</div>
+      <div class="meta-info">
+        <span>Published 21 Dec 2023</span>
+      </div>
+      <h2> HTML & CSS foundations </h2>
+      <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+      <div class="user-info">
+        <img src="./assets/images/image-avatar.webp">
+        Greg Hooper
+        
+      </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Michael Brancaleone</a>.
+  </div>
+ 
+</body>
+</html>
